@@ -1,0 +1,13 @@
+ControllerConfig:
+  Connection: "ssl://ec2-54-221-30-72.compute-1.amazonaws.com:8883"
+  Topic: "FCTS/FAE/+/GMX/#"
+
+AdapterConfig:
+  Connection: "ssl://arlgiwmn6umz6-ats.iot.eu-west-1.amazonaws.com:8883"
+  Topic: "FMI/v1"
+  Key: "sensor_id"
+  RootCA: "cert/root-CA.crt"
+  Cert: "cert/freeport-instruments.cert.pem"
+  PrivateKey: "cert/freeport-instruments.private.key"
+
+LogLevel: -1
