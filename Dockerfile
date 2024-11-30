@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:latest-amd64
 LABEL authors="christophe2bu"
 
 WORKDIR /geoapp-utils
