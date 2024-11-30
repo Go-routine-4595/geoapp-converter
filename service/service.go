@@ -50,8 +50,6 @@ func NewService(c IController, conf mqtt.MqttConf, logL int) *Service {
 		key:        conf.Key,
 	}
 	ncpu = runtime.NumCPU()
-	//TODO remove this line for deployment
-	ncpu = 1
 
 	srv.logger.Info().Int("ncpu", ncpu).Msg("Number of CPUs")
 	srv.logger.Info().Msgf("Starting service server: %s, topic: %s \n", conf.Connection, conf.Topic)

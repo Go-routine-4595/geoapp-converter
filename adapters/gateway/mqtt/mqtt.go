@@ -124,7 +124,7 @@ func (m *Mqtt) Connect() error {
 	m.client = pmqtt.NewClient(m.opt)
 	if token := m.client.Connect(); token.Wait() && token.Error() != nil {
 		m.logger.Error().Err(token.Error()).Msg("Error connecting to mqtt broker")
-		return errors.Join(token.Error(), errors.New("Error connecting to mqtt broker"))
+		return errors.Join(token.Error(), errors.New("error connecting to mqtt broker"))
 	}
 	return nil
 }
