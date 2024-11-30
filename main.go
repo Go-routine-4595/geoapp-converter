@@ -18,7 +18,7 @@ import (
 const (
 	configOpt   = "/opt/oem-util/config.yaml"
 	configLocal = "config.yaml"
-	version     = 0.1
+	version     = 0.2
 )
 
 var CompileDate string
