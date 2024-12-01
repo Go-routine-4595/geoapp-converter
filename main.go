@@ -58,6 +58,7 @@ func main() {
 	// default config file
 	if len(args) == 1 {
 		conf, err = openConfigFile(configOpt)
+		fmt.Println("Config file NOT found: ", configOpt)
 		if err != nil {
 			conf, err = openConfigFile(configLocal)
 			if err != nil {
