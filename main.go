@@ -18,7 +18,7 @@ import (
 const (
 	configOpt   = "/opt/geoapp-util/config.yaml"
 	configLocal = "config.yaml"
-	version     = 0.2
+	version     = 0.21
 )
 
 var CompileDate string
