@@ -1,12 +1,9 @@
 services:
-  oem-converter:
+  geoapp-converter:
     build: .
-    image: christophe2bu/geoapp-converter:73b07fb801bb
-    ports:
-      - "8883:8883"
-      - "1883:1883"
+    image: christophe2bu/geoapp-converter:165c869e885
     volumes:
-      - /Users/christophebuffard/Dev/github.com/geoapp-converter:/opt/geoapp-util
+      - /opt/geoapp-util/config.yaml:/opt/geoapp-util
     networks:
       - mynetwork
 networks:

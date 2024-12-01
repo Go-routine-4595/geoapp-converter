@@ -43,7 +43,7 @@ func NewController(conf MqttConf, ctx context.Context, logl int, wg *sync.WaitGr
 
 	opts = mqtt.NewClientOptions()
 	opts.AddBroker(conf.Connection)
-	opts.SetClientID("oem-converter-listener-" + uuid.NewV4().String())
+	opts.SetClientID("geoapp-" + uuid.NewV4().String())
 	opts.SetDefaultPublishHandler(c.forward)
 	opts.TLSConfig = &tls.Config{InsecureSkipVerify: true}
 
