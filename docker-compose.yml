@@ -3,7 +3,7 @@ services:
     build: .
     image: christophe2bu/geoapp-converter:165c869e885
     volumes:
-      - /opt/geoapp-util/config.yaml:/opt/geoapp-util
+      - /opt/geoapp-util:/opt/geoapp-util
     networks:
       - mynetwork
 networks:
